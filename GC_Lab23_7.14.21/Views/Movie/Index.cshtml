@@ -1,0 +1,32 @@
+﻿@model List<Movie>
+
+<br /> 
+<h3>Shelley's Random Movie Library</h3>
+<br />
+
+ <table class="table table-bordered">
+     <tr>
+         <th>Title</th>
+         <th>Genre</th>
+         <th>Runtime</th>
+         <th colspan="2">Actions</th>
+     </tr>
+
+     @foreach (var movie in Model)
+     {
+     <tr>
+         <td>@movie.Title</td>
+         <td>@movie.Genre</td>
+         <td>@movie.Runtime</td>
+         <td><a href="Movie/DeleteMovie?id=@movie.Id" class="btn btn-outline-dark">Remove</a></td>
+         <td> <a href="Movie/MovieForm?id=@movie.Id" class="btn btn-outline-dark">Edit</a> </td>
+
+     </tr>
+         }
+
+
+ </table>
+
+<br />
+<a href="Movie/MovieForm" class="btn btn-dark">Add a Movie to the Library</a>
+

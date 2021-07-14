@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\gddoo\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\gddoo\\.nuget\\packages"
+    ]
+  }
+}
